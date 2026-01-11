@@ -1,0 +1,64 @@
+.sheetmagic {
+  position: relative;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.sheetmagic * {
+  color: #000000 !important;
+}
+
+.sm-prop {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  background: transparent !important;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.sm-prop:focus {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.sm-mlt {
+  font-size: 16px;
+  resize: none;
+}
+
+.sm-num {
+  text-align: center;
+}
+
+.sm-roll {
+  cursor: pointer;
+}
+
+.sm-checkbox {
+  cursor: pointer;
+  appearance: none;
+}
+
+.sm-checkbox:checked {
+  appearance: auto;
+}
+
+.sm-noedit {
+  border: none;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+button[type='roll']::before {
+  content: '' !important;
+}
