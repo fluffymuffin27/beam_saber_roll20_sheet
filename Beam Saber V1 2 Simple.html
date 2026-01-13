@@ -1,0 +1,588 @@
+<!-- Beam Saber (V1.2) — Simple Roll20 Character Sheet HTML -->
+
+<div class="sheet-bs">
+
+  <!-- IDENTITY -->
+  <fieldset class="sheet-section">
+    <legend>Identity</legend>
+
+    <div class="sheet-row">
+      <label>Pilot Name</label>
+      <input type="text" name="attr_pilot_name" />
+    </div>
+
+    <div class="sheet-row">
+      <label>Callsign</label>
+      <input type="text" name="attr_pilot_callsign" />
+    </div>
+
+    <div class="sheet-row">
+      <label>Pronouns</label>
+      <input type="text" name="attr_pilot_pronouns" />
+    </div>
+
+    <div class="sheet-row">
+      <label>Pilot Look</label>
+      <input type="text" name="attr_pilot_look" />
+    </div>
+
+    <div class="sheet-row">
+      <label>Squad</label>
+      <input type="text" name="attr_squad" />
+    </div>
+
+    <div class="sheet-row">
+      <label>Drive</label>
+      <input type="text" name="attr_drive" />
+    </div>
+
+    <div class="sheet-row">
+      <label>History</label>
+      <textarea name="attr_history"></textarea>
+    </div>
+
+    <div class="sheet-row">
+      <label>Tragedy</label>
+      <textarea name="attr_tragedy"></textarea>
+    </div>
+
+    <div class="sheet-row">
+      <label>Opening</label>
+      <textarea name="attr_opening"></textarea>
+    </div>
+  </fieldset>
+
+  <!-- SCARS / STRESS / HARM -->
+  <fieldset class="sheet-section">
+    <legend>Scars / Stress / Harm</legend>
+
+    <div class="sheet-subsection">
+      <div><strong>Scars (tags)</strong></div>
+      <label><input type="checkbox" name="attr_scar_reckless" value="1" /> Reckless</label>
+      <label><input type="checkbox" name="attr_scar_cold" value="1" /> Cold</label>
+      <label><input type="checkbox" name="attr_scar_soft" value="1" /> Soft</label>
+      <label><input type="checkbox" name="attr_scar_vicious" value="1" /> Vicious</label>
+      <label><input type="checkbox" name="attr_scar_paranoid" value="1" /> Paranoid</label>
+      <label><input type="checkbox" name="attr_scar_fractious" value="1" /> Fractious</label>
+      <label><input type="checkbox" name="attr_scar_obsessed" value="1" /> Obsessed</label>
+      <label><input type="checkbox" name="attr_scar_haunted" value="1" /> Haunted</label>
+
+      <div class="sheet-row">
+        <label>Scar Notes 1</label>
+        <textarea name="attr_scar_note_1"></textarea>
+      </div>
+      <div class="sheet-row">
+        <label>Scar Notes 2</label>
+        <textarea name="attr_scar_note_2"></textarea>
+      </div>
+      <div class="sheet-row">
+        <label>Scar Notes 3</label>
+        <textarea name="attr_scar_note_3"></textarea>
+      </div>
+    </div>
+
+    <div class="sheet-subsection">
+      <div><strong>Stress (9)</strong></div>
+<div class="sheet-xp-track">
+    <label><input type="radio" name="stress" value="0" checked /> 0</label>
+    <label><input type="radio" name="stress" value="1" /> 1</label>
+    <label><input type="radio" name="stress" value="2" /> 2</label>
+    <label><input type="radio" name="stress" value="3" /> 3</label>
+    <label><input type="radio" name="stress" value="4" /> 4</label>
+    <label><input type="radio" name="stress" value="5" /> 5</label>
+    <label><input type="radio" name="stress" value="6" /> 6</label>
+    <label><input type="radio" name="stress" value="7" /> 7</label>
+    <label><input type="radio" name="stress" value="8" /> 8</label>
+    <label><input type="radio" name="stress" value="9" /> 9</label>
+  </div>
+    </div>
+
+    <div class="sheet-subsection">
+      <div class="sheet-row">
+        <label>Spark</label>
+        <input type="checkbox" name="attr_spark" value="1" />
+      </div>
+    </div>
+
+    <div class="sheet-subsection">
+      <div><strong>Harm</strong></div>
+      <div><strong>Armor (Harm)</strong></div>
+      <label><input type="checkbox" name="attr_harm_armor_1" value="1" /> Armor 1</label>
+      <label><input type="checkbox" name="attr_harm_armor_2" value="1" /> Armor 2</label>
+      <label><input type="checkbox" name="attr_harm_armor_3" value="1" /> Armor 3</label>
+
+      <div class="sheet-row">
+        <label>Harm 1</label>
+        <input type="text" name="attr_harm_1" />
+      </div>
+      <div class="sheet-row">
+        <label>Harm 2</label>
+        <input type="text" name="attr_harm_2" />
+      </div>
+      <div class="sheet-row">
+        <label>Harm 3</label>
+        <input type="text" name="attr_harm_3" />
+      </div>
+      <div class="sheet-row">
+        <label>Harm 4</label>
+        <input type="text" name="attr_harm_4" />
+      </div>
+
+      <div><strong>Recover Clock (4)</strong></div>
+      <label><input type="checkbox" name="attr_recover_1" value="1" /> 1</label>
+      <label><input type="checkbox" name="attr_recover_2" value="1" /> 2</label>
+      <label><input type="checkbox" name="attr_recover_3" value="1" /> 3</label>
+      <label><input type="checkbox" name="attr_recover_4" value="1" /> 4</label>
+    </div>
+  </fieldset>
+
+  <!-- DAMAGE / QUIRKS / ENHANCE -->
+  <fieldset class="sheet-section">
+    <legend>Damage / Quirks / Enhance</legend>
+
+    <div class="sheet-subsection">
+      <div><strong>Damage</strong></div>
+
+      <div><strong>Armor (Damage)</strong></div>
+      <label><input type="checkbox" name="attr_damage_armor_1" value="1" /> Armor 1</label>
+      <label><input type="checkbox" name="attr_damage_armor_2" value="1" /> Armor 2</label>
+      <label><input type="checkbox" name="attr_damage_armor_3" value="1" /> Armor 3</label>
+
+      <div class="sheet-row">
+        <label>Damage 1</label>
+        <input type="text" name="attr_damage_1" />
+      </div>
+      <div class="sheet-row">
+        <label>Damage 2</label>
+        <input type="text" name="attr_damage_2" />
+      </div>
+      <div class="sheet-row">
+        <label>Damage 3</label>
+        <input type="text" name="attr_damage_3" />
+      </div>
+      <div class="sheet-row">
+        <label>Damage 4</label>
+        <input type="text" name="attr_damage_4" />
+      </div>
+
+      <div><strong>Repair Clock (4)</strong></div>
+      <label><input type="checkbox" name="attr_repair_1" value="1" /> 1</label>
+      <label><input type="checkbox" name="attr_repair_2" value="1" /> 2</label>
+      <label><input type="checkbox" name="attr_repair_3" value="1" /> 3</label>
+      <label><input type="checkbox" name="attr_repair_4" value="1" /> 4</label>
+
+      <div><strong>Breakdown Clock (4)</strong></div>
+      <label><input type="checkbox" name="attr_breakdown_1" value="1" /> 1</label>
+      <label><input type="checkbox" name="attr_breakdown_2" value="1" /> 2</label>
+      <label><input type="checkbox" name="attr_breakdown_3" value="1" /> 3</label>
+      <label><input type="checkbox" name="attr_breakdown_4" value="1" /> 4</label>
+    </div>
+
+    <div class="sheet-subsection">
+      <div><strong>Quirks (4)</strong></div>
+
+      <div class="sheet-row">
+        <label>Quirk 1</label>
+        <input type="checkbox" name="attr_quirk_1_exhausted" value="1" />
+        <input type="text" name="attr_quirk_1" />
+      </div>
+      <div class="sheet-row">
+        <label>Quirk 2</label>
+        <input type="checkbox" name="attr_quirk_2_exhausted" value="1" />
+        <input type="text" name="attr_quirk_2" />
+      </div>
+      <div class="sheet-row">
+        <label>Quirk 3</label>
+        <input type="checkbox" name="attr_quirk_3_exhausted" value="1" />
+        <input type="text" name="attr_quirk_3" />
+      </div>
+      <div class="sheet-row">
+        <label>Quirk 4</label>
+        <input type="checkbox" name="attr_quirk_4_exhausted" value="1" />
+        <input type="text" name="attr_quirk_4" />
+      </div>
+    </div>
+
+    <div class="sheet-subsection">
+      <div><strong>Enhance</strong></div>
+
+      <div><strong>Enhance Track (6)</strong></div>
+      <label><input type="checkbox" name="attr_enhance_1" value="1" /> 1</label>
+      <label><input type="checkbox" name="attr_enhance_2" value="1" /> 2</label>
+      <label><input type="checkbox" name="attr_enhance_3" value="1" /> 3</label>
+      <label><input type="checkbox" name="attr_enhance_4" value="1" /> 4</label>
+      <label><input type="checkbox" name="attr_enhance_5" value="1" /> 5</label>
+      <label><input type="checkbox" name="attr_enhance_6" value="1" /> 6</label>
+
+      <div class="sheet-row">
+        <label>Enhancement 1</label>
+        <input type="text" name="attr_enhancement_1" />
+      </div>
+      <div class="sheet-row">
+        <label>Enhancement 2</label>
+        <input type="text" name="attr_enhancement_2" />
+      </div>
+      <div class="sheet-row">
+        <label>Enhancement 3</label>
+        <input type="text" name="attr_enhancement_3" />
+      </div>
+      <div class="sheet-row">
+        <label>Enhancement 4</label>
+        <input type="text" name="attr_enhancement_4" />
+      </div>
+    </div>
+  </fieldset>
+
+  <!-- DRIVE CLOCK -->
+  <fieldset class="sheet-section">
+    <legend>Spend a Drive (Clock 8)</legend>
+    <label><input type="checkbox" name="attr_drive_clock_1" value="1" /> 1</label>
+    <label><input type="checkbox" name="attr_drive_clock_2" value="1" /> 2</label>
+    <label><input type="checkbox" name="attr_drive_clock_3" value="1" /> 3</label>
+    <label><input type="checkbox" name="attr_drive_clock_4" value="1" /> 4</label>
+    <label><input type="checkbox" name="attr_drive_clock_5" value="1" /> 5</label>
+    <label><input type="checkbox" name="attr_drive_clock_6" value="1" /> 6</label>
+    <label><input type="checkbox" name="attr_drive_clock_7" value="1" /> 7</label>
+    <label><input type="checkbox" name="attr_drive_clock_8" value="1" /> 8</label>
+  </fieldset>
+
+<!-- PILOT ACTION ROLLS -->
+<fieldset class="sheet-section">
+  <legend>Pilot Actions (with roll buttons)</legend>
+
+  <div class="sheet-subsection">
+    <div><strong>Insight</strong></div>
+    
+   <div class="sheet-xp-track">
+    <label><input type="radio" name="attr_xp_insight" value="0" checked /> 0</label>
+    <label><input type="radio" name="attr_xp_insight" value="1" /> 1</label>
+    <label><input type="radio" name="attr_xp_insight" value="2" /> 2</label>
+    <label><input type="radio" name="attr_xp_insight" value="3" /> 3</label>
+    <label><input type="radio" name="attr_xp_insight" value="4" /> 4</label>
+    <label><input type="radio" name="attr_xp_insight" value="5" /> 5</label>
+    <label><input type="radio" name="attr_xp_insight" value="6" /> 6</label>
+  </div>
+
+    <div class="sheet-row">
+      <label>Hunt</label>
+      <input type="number" name="attr_hunt" min="0" max="4" value="0" />
+      <button type="roll" name="roll_hunt"
+        value="&{template:default} {{name=Hunt}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{hunt}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Study</label>
+      <input type="number" name="attr_study" min="0" max="4" value="0" />
+      <button type="roll" name="roll_study"
+        value="&{template:default} {{name=Study}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{study}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Survey</label>
+      <input type="number" name="attr_survey" min="0" max="4" value="0" />
+      <button type="roll" name="roll_survey"
+        value="&{template:default} {{name=Survey}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{survey}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Engineer</label>
+      <input type="number" name="attr_engineer" min="0" max="4" value="0" />
+      <button type="roll" name="roll_engineer"
+        value="&{template:default} {{name=Engineer}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{engineer}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+  </div>
+
+  <div class="sheet-subsection">
+    <div><strong>Prowess</strong></div>
+    
+    <div class="sheet-xp-track">
+    <label><input type="radio" name="attr_xp_prowess" value="0" checked /> 0</label>
+    <label><input type="radio" name="attr_xp_prowess" value="1" /> 1</label>
+    <label><input type="radio" name="attr_xp_prowess" value="2" /> 2</label>
+    <label><input type="radio" name="attr_xp_prowess" value="3" /> 3</label>
+    <label><input type="radio" name="attr_xp_prowess" value="4" /> 4</label>
+    <label><input type="radio" name="attr_xp_prowess" value="5" /> 5</label>
+    <label><input type="radio" name="attr_xp_prowess" value="6" /> 6</label>
+  </div>
+
+    <div class="sheet-row">
+      <label>Finesse</label>
+      <input type="number" name="attr_finesse" min="0" max="4" value="0" />
+      <button type="roll" name="roll_finesse"
+        value="&{template:default} {{name=Finesse}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{finesse}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Prowl</label>
+      <input type="number" name="attr_prowl" min="0" max="4" value="0" />
+      <button type="roll" name="roll_prowl"
+        value="&{template:default} {{name=Prowl}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{prowl}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Struggle</label>
+      <input type="number" name="attr_struggle" min="0" max="4" value="0" />
+      <button type="roll" name="roll_struggle"
+        value="&{template:default} {{name=Struggle}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{struggle}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Wreck</label>
+      <input type="number" name="attr_wreck" min="0" max="4" value="0" />
+      <button type="roll" name="roll_wreck"
+        value="&{template:default} {{name=Wreck}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{wreck}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+  </div>
+
+  <div class="sheet-subsection">
+    <div><strong>Resolve</strong></div>
+    
+    <div class="sheet-xp-track">
+    <label><input type="radio" name="attr_xp_resolve" value="0" checked /> 0</label>
+    <label><input type="radio" name="attr_xp_resolve" value="1" /> 1</label>
+    <label><input type="radio" name="attr_xp_resolve" value="2" /> 2</label>
+    <label><input type="radio" name="attr_xp_resolve" value="3" /> 3</label>
+    <label><input type="radio" name="attr_xp_resolve" value="4" /> 4</label>
+    <label><input type="radio" name="attr_xp_resolve" value="5" /> 5</label>
+    <label><input type="radio" name="attr_xp_resolve" value="6" /> 6</label>
+  </div>
+
+    <div class="sheet-row">
+      <label>Command</label>
+      <input type="number" name="attr_command" min="0" max="4" value="0" />
+      <button type="roll" name="roll_command"
+        value="&{template:default} {{name=Command}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{command}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Consort</label>
+      <input type="number" name="attr_consort" min="0" max="4" value="0" />
+      <button type="roll" name="roll_consort"
+        value="&{template:default} {{name=Consort}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{consort}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Sway</label>
+      <input type="number" name="attr_sway" min="0" max="4" value="0" />
+      <button type="roll" name="roll_sway"
+        value="&{template:default} {{name=Sway}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{sway}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Interface</label>
+      <input type="number" name="attr_interface" min="0" max="4" value="0" />
+      <button type="roll" name="roll_interface"
+        value="&{template:default} {{name=Interface}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{interface}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+  </div>
+</fieldset>
+
+<!-- VEHICLE ACTION ROLLS -->
+<fieldset class="sheet-section">
+  <legend>Vehicle Actions (with roll buttons)</legend>
+
+  <div class="sheet-subsection">
+    <div><strong>Expertise</strong></div>
+    
+    <div class="sheet-xp-track">
+    <label><input type="radio" name="attr_xp_expertise" value="0" checked /> 0</label>
+    <label><input type="radio" name="attr_xp_expertise" value="1" /> 1</label>
+    <label><input type="radio" name="attr_xp_expertise" value="2" /> 2</label>
+    <label><input type="radio" name="attr_xp_expertise" value="3" /> 3</label>
+    <label><input type="radio" name="attr_xp_expertise" value="4" /> 4</label>
+    <label><input type="radio" name="attr_xp_expertise" value="5" /> 5</label>
+    <label><input type="radio" name="attr_xp_expertise" value="6" /> 6</label>
+  </div>
+
+    <div class="sheet-row">
+      <label>Battle</label>
+      <input type="number" name="attr_battle" min="0" max="4" value="0" />
+      <button type="roll" name="roll_battle"
+        value="&{template:default} {{name=Battle}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{battle}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Destroy</label>
+      <input type="number" name="attr_destroy" min="0" max="4" value="0" />
+      <button type="roll" name="roll_destroy"
+        value="&{template:default} {{name=Destroy}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{destroy}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Maneuver</label>
+      <input type="number" name="attr_maneuver" min="0" max="4" value="0" />
+      <button type="roll" name="roll_maneuver"
+        value="&{template:default} {{name=Maneuver}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{maneuver}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+  </div>
+
+  <div class="sheet-subsection">
+    <div><strong>Acuity</strong></div>
+    
+    <div class="sheet-xp-track">
+    <label><input type="radio" name="attr_xp_acuity" value="0" checked /> 0</label>
+    <label><input type="radio" name="attr_xp_acuity" value="1" /> 1</label>
+    <label><input type="radio" name="attr_xp_acuity" value="2" /> 2</label>
+    <label><input type="radio" name="attr_xp_acuity" value="3" /> 3</label>
+    <label><input type="radio" name="attr_xp_acuity" value="4" /> 4</label>
+    <label><input type="radio" name="attr_xp_acuity" value="5" /> 5</label>
+    <label><input type="radio" name="attr_xp_acuity" value="6" /> 6</label>
+  </div>
+
+    <div class="sheet-row">
+      <label>Bombard</label>
+      <input type="number" name="attr_bombard" min="0" max="4" value="0" />
+      <button type="roll" name="roll_bombard"
+        value="&{template:default} {{name=Bombard}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{bombard}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Manipulate</label>
+      <input type="number" name="attr_manipulate" min="0" max="4" value="0" />
+      <button type="roll" name="roll_manipulate"
+        value="&{template:default} {{name=Manipulate}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{manipulate}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+
+    <div class="sheet-row">
+      <label>Scan</label>
+      <input type="number" name="attr_scan" min="0" max="4" value="0" />
+      <button type="roll" name="roll_scan"
+        value="&{template:default} {{name=Scan}} {{Position=?{Position|Controlled|Risky|Desperate}}} {{Effect=?{Effect|Limited|Standard|Great}}} {{Dice=?{Number of Dice|@{scan}, [[1d6cf<3]]|0, ZERO DICE take lowest result:[[1d6cf<3]] ♦ [[1d6cf<3]]|1, [[1d6cf<3]]|2, [[1d6cf<3]] ♦ [[1d6cf<3]]|3, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|4, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|5, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|6, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]|7, [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]] ♦ [[1d6cf<3]]}}}">
+        Roll
+      </button>
+    </div>
+  </div>
+</fieldset>
+
+
+  <!-- LOADOUTS -->
+  <fieldset class="sheet-section">
+    <legend>Loadouts</legend>
+
+    <div class="sheet-subsection">
+      <div><strong>Pilot Load</strong></div>
+      <label><input type="radio" name="attr_pilot_load_level" value="light" /> Light</label>
+      <label><input type="radio" name="attr_pilot_load_level" value="medium" /> Medium</label>
+      <label><input type="radio" name="attr_pilot_load_level" value="heavy" /> Heavy</label>
+
+      <div><strong>Pilot Items (repeating)</strong></div>
+      <fieldset class="repeating_pilot_load">
+        <label>1-load <input type="checkbox" name="attr_load1" value="1" /></label>
+        <label>2-load <input type="checkbox" name="attr_load2" value="1" /></label>
+        <input type="text" name="attr_item" placeholder="Item" />
+      </fieldset>
+    </div>
+
+    <div class="sheet-subsection">
+      <div><strong>Vehicle Load</strong></div>
+      <label><input type="radio" name="attr_vehicle_load_level" value="light" /> Light</label>
+      <label><input type="radio" name="attr_vehicle_load_level" value="medium" /> Medium</label>
+      <label><input type="radio" name="attr_vehicle_load_level" value="heavy" /> Heavy</label>
+
+      <div><strong>Vehicle Items (repeating)</strong></div>
+      <fieldset class="repeating_vehicle_load">
+        <label>1-load <input type="checkbox" name="attr_load1" value="1" /></label>
+        <label>2-load <input type="checkbox" name="attr_load2" value="1" /></label>
+        <input type="text" name="attr_item" placeholder="Item" />
+      </fieldset>
+    </div>
+  </fieldset>
+
+  <!-- VEHICLE INFO -->
+  <fieldset class="sheet-section">
+    <legend>Vehicle</legend>
+
+    <div class="sheet-row">
+      <label>Vehicle Name</label>
+      <input type="text" name="attr_vehicle_name" />
+    </div>
+
+    <div class="sheet-row">
+      <label>Model</label>
+      <input type="text" name="attr_vehicle_model" />
+    </div>
+
+    <div class="sheet-row">
+      <label>Vehicle Look (short)</label>
+      <input type="text" name="attr_vehicle_look_short" />
+    </div>
+
+    <div class="sheet-row">
+      <label>Vehicle Look / Details</label>
+      <textarea name="attr_vehicle_look_details"></textarea>
+    </div>
+  </fieldset>
+
+  <!-- ABILITIES -->
+  <fieldset class="sheet-section">
+    <legend>Abilities</legend>
+
+    <div><strong>Abilities XP (8)</strong></div>
+    <div class="sheet-xp-track">
+    <label><input type="radio" name="abilities_xp" value="0" checked /> 0</label>
+    <label><input type="radio" name="abilities_xp" value="1" /> 1</label>
+    <label><input type="radio" name="abilities_xp" value="2" /> 2</label>
+    <label><input type="radio" name="abilities_xp" value="3" /> 3</label>
+    <label><input type="radio" name="abilities_xp" value="4" /> 4</label>
+    <label><input type="radio" name="abilities_xp" value="5" /> 5</label>
+    <label><input type="radio" name="abilities_xp" value="6" /> 6</label>
+    <label><input type="radio" name="stress" value="7" /> 7</label>
+    <label><input type="radio" name="stress" value="8" /> 8</label>
+  </div>
+
+    <div><strong>Abilities (repeating)</strong></div>
+    <fieldset class="repeating_abilities">
+      <label>Selected <input type="checkbox" name="attr_selected" value="1" /></label>
+      <input type="text" name="attr_name" placeholder="Ability name" />
+      <textarea name="attr_notes" placeholder="Ability notes / description"></textarea>
+    </fieldset>
+
+    <div class="sheet-subsection">
+      <div><strong>Veteran</strong></div>
+      <div class="sheet-row">
+        <label>Veteran Taken (0–3)</label>
+        <input type="number" name="attr_veteran_count" min="0" max="3" value="0" />
+      </div>
+      <div class="sheet-row">
+        <label>Veteran Notes</label>
+        <textarea name="attr_veteran_notes"></textarea>
+      </div>
+    </div>
+  </fieldset>
+
+</div>
+
